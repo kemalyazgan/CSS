@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KURSFINITY</title>
+</head>
+<body> 
+    <h2>KursFINITY</h2>
+    <main> 
+        <h3> YoklamaListen</h3>
+        <p> 
+            Clik here to view todays <a href= "#"  target=" blank"> YoklamaList!</a>.</p>
+        <a href="#"><img src="https://imgix.bustle.com/scary-mommy/2020/05/baby-see-mom-boob.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg "
+                alt="These Babies seem really shocked about our YoklamaValues"></a>
+        <div class="lists">
+            <!-- The class attribute of divs let me access all divs with that class from CSS later on-->
+            <p> Here you can see our <strong>best</strong> performers:</p>
+            <ul> 
+                <li>
+                    Ahmet Kemal
+                </li>
+                <li> Kerem                
+                </li>
+                <li> Nezih
+                </li>
+            </ul>
+             <img src="/Images/table.jpeg">
+    
+            <p> And here you can see the <strong>worst</strong> performers:</p>
+            <ol>  <!-- This list is ordered - not by name or range - the list elements are just numbered now-->
+                <li> Kemal</li>
+                <li> Fehmi</li>
+                <li> Arif</li>
+            </ol>
+        </div>
+         <form action="/submit-cat-photo"> 
+            <p> Please type in your contact information:</p>
+            <!-- We will use radio buttons to let the user select contact way-->
+            <!-- the "Name" attribute groups the radio buttons into radio groups, so if one is selected, the other cant be-->
+            <!-- the "id" attribute gives the buttons a "name" with which they can be linked to the labels "for" attribute-->
+            <label for="E-Mail"><input type="radio" name="b1" id="E-Mail">E-Mail</label><br> 
+            <label for="telephone"><input type="radio" name="b1" id="telephone">telephone</label><br><br>
+            <!-- The "checked" attribute has no value and makes the checkbox checked by default -->
+            <label for="loving"><input id="loving" type="checkbox" name="b2" checked>Loving </label>
+            <!-- The "placeholder" attribute is for the light grey text inside the input box, that disappears as soon as you type-->
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">submit</button>
+         </form>
+    </main>
+    <footer>
+        <p><small> Meet us on  <a href="https://instagram.com">Instagram</a> or on <a href="https://facebook.com">Facebook</a></small></p>
+    </footer>
+</body>
+</html>
