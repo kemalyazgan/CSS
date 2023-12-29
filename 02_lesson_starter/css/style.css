@@ -1,0 +1,76 @@
+/* The everything selector (it "lists" every element
+that is used in the HTML file, so no inheritance is needed
+as every element is selected seperately; used for css-resets */
+* {
+    /* make something*/
+}
+button, input, textarea, select, p {
+    /* makes the above elements inherit font settings 
+    when they are changed in a super element*/
+    font: inherit
+}
+html {
+    /*works just like the body-selector, but lets
+    every element inherit everything*/
+    border:3px solid black
+}
+
+
+body {
+    /*This is an example for inherited attributes*/
+    font-size: 22px;
+    /*This is an example for non-inherited attributes*/
+    border: 3px solid black
+
+}
+/*This is an element-selector. It changes the style of
+all elements in this html class. It is used the most after
+class selectors */
+p {
+    color: purple;
+}
+/* This selector refers to all the span elements
+inside the paragraph elements
+span = inline container to let some words out of the text 
+stand out, bzw. mark them.
+*/
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+/* --> Instead, seperate classes should be used (look down below)*/
+.highlight {
+    color: white;
+    text-transform: lowercase;
+    background-color: purple;
+}
+/* Group selections select more than one element class */
+h1, h2 {
+    color: limegreen;
+}
+
+/* (Class-Selector) The .gray class refers to the last two paragraphs and this is 
+assigned in the index.html file. Exmpl.: "<p class=gray ...> */
+.gray {
+    color: gray;
+}
+
+p {
+    /* This will overrule all previous p-color-rules, but not the ones
+    that are also .gray-class. Because overwriting
+    only works with same-level speicificity (not more 
+    specific elements)*/
+    color: brown;
+}
+p{
+    /* Not recommended, but the !important mark overrides
+    more specific rules and applies the change to ALL elements,
+    regardless of previous specification. Only in worst cases.
+    */
+    color: blue!important;
+}
+/* (ID-Selector) The # prefix refers to the id of specific elements and is 
+used the least often */
+#second {
+    font-style: italic;
+}
