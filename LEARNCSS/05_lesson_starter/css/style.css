@@ -1,25 +1,27 @@
 * {
+    /*A common use for the wildcard is the reset of the margin and padding sizes,
+    as these can get very confusing with more and more elements added */ 
     margin: 0;
     padding: 0;
+    /* content-boc sizing sets the sizes only for the content, not for padding etc.,
+    so the total widht of the element is the set size + padding etc.*/
+    box-sizing: content-box;
+    /*Border-box however ensures that the sizes are set all-inclusive */
     box-sizing: border-box;
 }
-
-body {
-    min-height: 100vh;
-}
-
-h1 {
-    border: 2px dashed red;
-    width: 50%;
-    font-size: 3rem;
-    padding: 0.5em;
-}
-
-main {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 2rem;
-    width: 40ch;
+.container {
+    border: dashed red;
+    border-top: 5px solid;
+    border-bottom: 10px dotted;
+    border-right: 20px dashed;
+    font-size: 1.5rem;
+    padding: 1.5em ;
+    margin: 1.5em 2em ;
+    outline: 5px solid magenta;
+    outline-offset: 10px;
+   /* same as:
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-right:2em;
+    margin-left:2em; */
 }

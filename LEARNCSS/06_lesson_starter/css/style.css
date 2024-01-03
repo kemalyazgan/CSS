@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+/* input, button {
+    font:inherit;
+} */ 
+p {
+    /* The text-transform rule can change the characters of the text, e.g. capitalize, uppercase/lowercase and so on*/
+    text-transform: capitalize;
+
+    /* The text-decoration rule can change the appearance of the text, e.g. underline/overline/line-through ...*/
+    text-decoration: underline 0.5px;
+    text-decoration-color: red;
+    text-underline-offset: 4px;
+
+
+    /* text-align:center; */
+
+/*     text-indent only indents the first line, contrary to align*/
+/*     text-indent: 10em;
+ */    /*line-height changes the space between the lines, and works with the standard measuring sizes like px etc.*/
+    line-height: 1,5;
+    letter-spacing: 0.1em  ;
+    word-spacing: 0.5em;
+    /*font-weight changes the font boldness*/
+    font-weight:normal;
+    /*font-style changes the style like italic, oblique*/
+    font-style: italic;
+    /*The first specified font under font-family is the preferred ff, the one after it is a ffallback option,if
+    the operating system doesn't support given font, and the third is the second fallback
+    Note: FFs with spaced names need " " around them*/
+    font-family:'Courier New', Courier, monospace;
+    /*We can also apply external fonts by linking them (see head section HTML) or importing (top of CSS style sheet) them
+    */
+    font-family: 'Roboto', sans-serif;;
+}

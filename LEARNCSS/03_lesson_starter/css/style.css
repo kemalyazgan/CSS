@@ -2,4 +2,25 @@ body {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    /*background sets the background-color, and color sets the text-color*/
+    background: papayawhip;
+    color: rgb(137, 55, 0);
+}
+ 
+p  {
+    /*the 4th value of rgba determines transparency, 0-1, 
+    be careful: rgb -> rgba*/
+    color: rgba(184, 134, 10, 0.5);
+}
+
+h2 {
+    /*Tthis is hexadecimal color coding (HEX), 6 digits with numbers and/or letters needed, 
+    000000 being black and FFFFFF being white, FF meand full for that channel (2 for 
+    red, 2 for green, 2 for blue. If all 2 digits are the sane, we can break it down
+    to 3 digits representing rgb )*/
+    color: #ff4d00;
+}
+
+h2 {
+    color:hsl(0, 76%, 26%);
 }

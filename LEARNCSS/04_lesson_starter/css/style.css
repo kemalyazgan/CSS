@@ -1,0 +1,52 @@
+
+/*Different measurement types: rem, em, ch, px, */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body {
+    /*Using vw (1% of the viewports width) will cause the horizontal scrollbar to 
+    appear when the vertical one appears automatically, which is undesirable. Instead, 
+    use 100%*/
+    width: 100vw;
+
+    width: 100%;
+    /* To prevent the body element to cut off where its elements "stop", we
+    can set the min-height attribute*/
+    min-height: 100vh;
+}
+html {
+    font-size: 12px;
+}
+header {
+    width:100%;
+}
+h1 {
+    border: 2px dashed red;
+    /* For element sizing (like widht/height) percentages are facoured, instead of absolute values
+    also, sub elements inherit the sizes of the super elements */
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+
+}
+main {
+    /*Normally, we would use absolute font sizes like px, ehich is disadvantagious, 
+    because it will not adapt to changing local size changes (Browser, Display...)*/
+    font-size: 16px;
+    /*Instead, we will use rem (root element) to specify the font size in regards
+    to the font size of our root element (html). 1 rem will equal to 6px by default, 
+    if not changed */
+    font-size: 2rem;
+
+}
+
+p {
+    /* em sets the size relative to the parent size (not the root)*/ 
+    font-size: 2em;
+    /* the ch-sizesetter is applied with regards to the character-type of the 
+    elements of the selector it is in. So here, width = 40ch = 40 text letters*/
+    width: 40ch;
+}

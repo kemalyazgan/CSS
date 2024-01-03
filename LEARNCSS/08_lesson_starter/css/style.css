@@ -1,7 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  padding: 5% 10%;
+  padding: 5% 10% /*Erinnerung: Oben/unten und Rechts/links*/;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
+}
+
+ol /*Ordered list*/ {
+  /*If we dont want any indention of our list, set style-type to none and
+  padding to 0*/
+  list-style-type: none;
+  padding: 0;
+  list-style-type:lower-alpha;
+}
+
+ul {
+  list-style-type: square;
+  text-align: center;
+  /*We can now set the list points to align to the text by specifing inside/outside parameter*/
+  list-style-position: inside;
+  color: burlywood;
+  line-height:1.5;
+/*   list-style-image: url("../images/checkmark.png");
+  /*All 3 properties of styletype, position and image can be set in one parameter*/
+  list-style: square inside; 
+}
+
+ul li:nth-child(2) /*For change of a specific list item */ {
+color: red;
+}
+
+ul li:nth-child(odd) /*For change of a specific list item (odd/even numbers) */ {
+  color: brown;
+}
+
+ul  ::marker /*Used if the markers should be styled differently than the list points*/ {
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  /*The content parameter changes the list points to f.e. text, icons etc. */
+  content: "Only 5$ >> "; 
 }
